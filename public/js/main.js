@@ -3,13 +3,13 @@
 // 2. 'Nom', 'prenom', 'age', 'taille'
 // 3. Affichez votre age via un console.log()
 
-let o = {
-    nom: "Abdel",
-    prenom: "Elbakkal",
-    age: 25,
-    taille: 186,
-}
-console.log(o.age);
+// let o = {
+//     nom: "Abdel",
+//     prenom: "Elbakkal",
+//     age: 25,
+//     taille: 186,
+// }
+// console.log(o.age);
 
 
 
@@ -17,13 +17,13 @@ console.log(o.age);
 // ## Exo 2 
 // 1. Créez un second et un 3eme personnage (le 3eme personnage doit rester vide)
 
-let p = {
-    nom: "Michel",
-    prenom: "Delarue",
-    age: 24,
-    taille: 152,
-}
-console.log(p);
+// let p = {
+//     nom: "Michel",
+//     prenom: "Delarue",
+//     age: 24,
+//     taille: 152,
+// }
+// console.log(p);
 
 
 
@@ -44,22 +44,22 @@ console.log(p);
 // }
 // console.log(m);
 
-let m = {}
+// let m = {}
 
-m.nom = o.nom;
-m.age = p.age;
-m.taille = 174;
+// m.nom = o.nom;
+// m.age = p.age;
+// m.taille = 174;
 
-console.log(m);
+// console.log(m);
 // ## Exo 4
 // 1. Créer un personnage4 et donner lui la méthode [Saluer] qui dira "Coucou" avec le nom du personage2
 // 2. Lancer cette méthode
 
-let h = {
-    Saluer(){console.log(`Coucou ${m.nom}`);}
-}
+// let h = {
+//     Saluer(){console.log(`Coucou ${m.nom}`);}
+// }
 
-h.Saluer();
+// h.Saluer();
 
 
 // ## Exo 5
@@ -89,3 +89,73 @@ h.Saluer();
 // }
 // thief.usurpation(c)
 // console.log(thief);
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+// ## Exo 1
+// 1. Créez un personnage avec un nom un et prenom et donnez lui une méthode 'sePresenter' qui fera un console.log "Bonjour je m'appelle " avec son nom puis son prénom.
+
+// let a = {
+//     nom: "Vandeputte",
+//     prenom: "Maksime",
+//     sePresenter(){
+//         console.log(`Bonjour je m'appelle  ${a.nom}  ${a.prenom}`);}
+// }
+// a.sePresenter()
+
+
+// ## Exo 2
+// 1. Créer un objet avec un nom et une méthode
+// 2. La méthode de votre objet lance un prompt permetant de changer son age
+// 3. Une alert renvoi "[objet] a [age de l'objet] ans"
+
+// let g = {
+//     nom: "Eric",
+//     age(){
+//     this.age = +prompt("Quelle age as tu ?")
+//     }
+// }
+// g.age()
+// alert(`${g.nom} à ${g.age} ans`)
+
+
+// ## Exo 1
+
+// 1. Créer deux personnages du nom de François et Sergio
+// let f = {
+//     nom: "François",
+//     panier: ["Poivre", "Tomate", "Sprite"],
+// }
+
+
+// let s = {
+//     nom: "Sergio",
+//     panier: ["Poivre", "Tomate", "Sprite"],
+// }
+
+// 2. Donnez leur à chacun une propriété panier (tableau) contenant tous deux des ingrédients différents du super marché, par exemple huile,tomate,pain etc..
+
+
+let f = {
+    nom: "François",
+    panier: ["Poivre", "Tomate", "Sprite"],
+    derober(enlever){
+        this.panier.push(enlever.panier.shift())
+        this.panier.push(enlever.panier.shift())
+    }
+}
+
+
+let s = {
+    nom: "Sergio",
+    panier: ["Poulet", "Patates", "Courgette"],
+}
+
+f.derober(s)
+console.log(f);
+
+console.log(s);
+
+
+// 3. Rajouter à François la méthode derober, qui prend 2 aliments du panier de Sergio et les met dans son panier.
