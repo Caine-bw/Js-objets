@@ -117,9 +117,13 @@
 //     }
 // }
 // g.age()
-// alert(`${g.nom} à ${g.age} ans`)
+// alert(`${this.nom} à ${this.age} ans`)
 
 
+
+
+
+//----------------------3-------------------------------------------------------------//
 // ## Exo 1
 
 // 1. Créer deux personnages du nom de François et Sergio
@@ -135,27 +139,135 @@
 // }
 
 // 2. Donnez leur à chacun une propriété panier (tableau) contenant tous deux des ingrédients différents du super marché, par exemple huile,tomate,pain etc..
-
-
-let f = {
-    nom: "François",
-    panier: ["Poivre", "Tomate", "Sprite"],
-    derober(enlever){
-        this.panier.push(enlever.panier.shift())
-        this.panier.push(enlever.panier.shift())
-    }
-}
-
-
-let s = {
-    nom: "Sergio",
-    panier: ["Poulet", "Patates", "Courgette"],
-}
-
-f.derober(s)
-console.log(f);
-
-console.log(s);
-
-
 // 3. Rajouter à François la méthode derober, qui prend 2 aliments du panier de Sergio et les met dans son panier.
+
+// let f = {
+//     nom: "François",
+//     panier: ["Poivre", "Tomate", "Sprite"],
+//     derober(enlever){
+//         this.panier.push(enlever.panier.shift())
+//         this.panier.push(enlever.panier.shift())
+//     }
+// }
+
+
+// let s = {
+//     nom: "Sergio",
+//     panier: ["Poulet", "Patates", "Courgette"],
+// }
+
+// f.derober(s)
+// console.log(f);
+
+// console.log(s);
+
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------4----------------------------------------------------------------------------------//
+
+// ## Exo 
+
+// 1. Créer un objet "vieille_dame" avec une propriété "âge" assez élevée une propriété "nom" contenant un "prenom" et un "nom de famille" (/!\ Objet dans objet), une propriété "moral" avec comme valeur "mal" et une propriété "objet" par exemple une canne 
+// 2. une méthode "parler" qui selon son moral fait une alert différente, si son moral = "mal" alors elle dira "Vous me dérangez et le frappe avec son objet", si son moral = "bien" alors elle dira "bonjour" + le nom du vieil_homme.
+// 3. Créer ensuite l'objet vieil_homme avec une propriété "nom" et une méthode "adoucir" qui change le moral de la "vieille_dame" en "bien".
+// 4. Faites parler la vieille dame, puis lancer la méthode adoucir du vieil homme et relancer la méthode parler de la vieille dame.
+
+
+let vielle_dame = {
+    age: 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let vielle_dame = {
+//     age: 69,
+//     nom: "Cruz Abuela",
+//     moral: "mal",
+//     objet: "Canne",
+//     parler(x){
+//         if (this.moral == "mal") {
+//             alert(`Vous me dérangez, vous méritez un coup de ${this.objet}`)
+//         } else if (this.moral == "bien"){
+//             alert(`Bonjour ${x.nom}`)
+//         }
+//     }
+// }
+
+
+// let vielle_homme = {
+//     nom: "Michel",
+//     adoucir(){
+//     vielle_dame.moral = "bien"
+//     }
+// }
+
+// vielle_dame.parler(vielle_homme)
+// vielle_homme.adoucir(vielle_dame)
+// vielle_dame.parler(vielle_homme)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
